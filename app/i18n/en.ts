@@ -41,6 +41,11 @@ const en = {
     tapToSignIn: "Tap to sign in!",
     hint: "Hint: you can use any email address and your favorite password :)",
   },
+  Navigator:{
+    admin:"Admin",
+    student:"Student",
+    teacher:"Teacher"
+  },
   demoNavigator: {
     componentsTab: "Components",
     debugTab: "Debug",

@@ -38,7 +38,10 @@ export type AppStackParamList = {
   Login: undefined // @demo remove-current-line
   Demo: NavigatorScreenParams<DemoTabParamList> // @demo remove-current-line
   // 🔥 Your screens go here
-  // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
+  Admin: undefined
+	Teacher: undefined
+	Student: undefined
+	// IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
 }
 
 /**
@@ -82,7 +85,10 @@ const AppStack = observer(function AppStack() {
       )}
       {/* @demo remove-block-end */}
       {/** 🔥 Your screens go here */}
-      {/* IGNITE_GENERATOR_ANCHOR_APP_STACK_SCREENS */}
+      <Stack.Screen name="Admin" component={Screens.AdminScreen} />
+			<Stack.Screen name="Teacher" component={Screens.TeacherScreen} />
+			<Stack.Screen name="Student" component={Screens.StudentScreen} />
+			{/* IGNITE_GENERATOR_ANCHOR_APP_STACK_SCREENS */}
     </Stack.Navigator>
   )
 })
